@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 // I'll import here the bootstrap css file, but really you can import it in any component
 import 'bootstrap/dist/css/bootstrap.min.css'
+import MyNavbar from './components/MyNavbar'
+
+// in this case App is the parent component, and MyNavbar is a child
+// you can pass props from a parent to a child
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyNavbar payoff="We can serve only pasta!" />
+      <div>Hello!</div>
     </div>
   );
 }
